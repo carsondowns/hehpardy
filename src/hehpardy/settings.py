@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
     'pardy',
 ]
 
@@ -57,6 +58,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'hehpardy.wsgi.application'
+ASGI_APPLICATION = 'hehpardy.routing.application'
+
 
 
 # Database

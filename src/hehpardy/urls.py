@@ -1,9 +1,7 @@
 from django.contrib import admin
-from django.urls import path
-
-from pardy.views import index
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    path('pardy/', include('pardy.urls', namespace='pardy')),
 ]
